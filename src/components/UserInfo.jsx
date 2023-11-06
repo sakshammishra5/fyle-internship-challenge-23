@@ -7,8 +7,6 @@ const UserInfo = () => {
     const { userInfo } = useContext(Github)
     if (userInfo == null) return <UserSkeleton />;
     if(userInfo.message) return <h1 className='text-center'>{userInfo.message}</h1>
-
-    console.log(userInfo);
     return (
         <div className='ml-20'>
             {/* <h1 className='font-mono ml-10 mb-7'>GitHub User</h1> */}

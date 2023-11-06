@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react'
+import  {  useContext } from 'react'
 import UserInfo from './UserInfo'
 import UserRepo from './UserRepo'
 import RangeInput from './RangeInput'

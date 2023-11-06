@@ -4,14 +4,12 @@ import RepoCard from './RepoCard'
 import RepoSkeleton from './RepoSkeleton'
 import useFetchRepository from '../utils/useFetchRepository'
 import RenderPageNumber from '../utils/RenderPageNumber'
-import RangeInput from './RangeInput'
 
 
 const UserRepo = () => {
     const {userInfo,Data, page, setPage, loading,perPage,setperPage} = useContext(Github)
 
     useFetchRepository()
-   console.log(userInfo);
     
     if (loading) return <RepoSkeleton />
 
