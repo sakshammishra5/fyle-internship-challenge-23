@@ -19,12 +19,7 @@ const useFetchUser = () => {
 
 
     const fetchData = async () => {
-        const data = await fetch(GET_USER_DETAILS + user, {
-            method: "GET",
-            headers: {
-                Authorization: `token ${GITHUB_TOKEN}`,
-            },
-        })
+        const data = await fetch(GET_USER_DETAILS + user)
         const json = await data.json()
         console.log(json);
         setSubmit(false)

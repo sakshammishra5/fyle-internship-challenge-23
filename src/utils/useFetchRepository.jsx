@@ -4,7 +4,7 @@ import { GITHUB_TOKEN } from "../constants/constants";
 
 
 const useFetchRepository = () => {
-    const {submit,page,user,setLoading,setData,perPage}=useContext(Github)
+    const { submit, page, user, setLoading, setData, perPage } = useContext(Github)
 
     useEffect(() => {
         if (submit || page && user !== "") {
@@ -15,9 +15,7 @@ const useFetchRepository = () => {
 
     const fetchUserRepo = async () => {
         const apiUrl = `https://api.github.com/users/${user}/repos?page=${page}&per_page=${perPage}`;
-        const data = await fetch(apiUrl,{  headers: {
-            Authorization: `token ${GITHUB_TOKEN}`,
-          }})
+        const data = await fetch(apiUrl)
         const json = await data.json()
         await fetchData(json)
     }
@@ -44,7 +42,7 @@ const useFetchRepository = () => {
         setData(newData);
         setLoading(false)
     };
- 
+
 }
 
 export default useFetchRepository
