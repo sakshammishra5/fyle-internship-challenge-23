@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import UserSkeleton from "./UserSkeleton";
+import UserSkeleton from "../UserSkeleton";
 import { describe, expect, it } from "vitest";
 
 describe('UserSkleton component test', () => {
@@ -12,6 +12,5 @@ describe('UserSkleton component test', () => {
 });
 
 });
-
 
 
