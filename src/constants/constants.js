@@ -1,4 +1,4 @@
-export const GITHUB_TOKEN="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"
+export const GITHUB_TOKEN="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"
 export const GET_USER_DETAILS="https://api.github.com/users/"
 
 export const GET_USER_REPO=`https://api.github.com/users/`
